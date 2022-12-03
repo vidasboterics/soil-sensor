@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="T*9WS`)DHgI[Jk6l^U~q">moisture</variable></variables><block type="device_forever" id="~vun]~HUp;Q._A]VgRw+" x="328" y="-91"><statement name="HANDLER"><block type="variables_set" id="?``z@8z5)qoJ8:*(jYC$"><field name="VAR" id="T*9WS`)DHgI[Jk6l^U~q">moisture</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="bFI_lxI#r^(^/OSAJE!u"><field name="name">AnalogPin.P1</field></block></value><next><block type="controls_if" id="Sd~lDT5:=7D/In=u`m-^"><mutation elseif="1" else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="M|r2!VCiB8U_p}Ibjnhv"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="Xl@^2P_|9-UfE;R8uXwM"><field name="VAR" id="T*9WS`)DHgI[Jk6l^U~q">moisture</field></block></value><value name="B"><shadow type="math_number" id="h$^+8yJ(ObEj^g=ie/O?"><field name="NUM">1023</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="Q=%=#c0?@P^OCZ^gn+fn"><field name="LEDS">`
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field><next><block type="basic_show_icon" id="o8mjFn7eI-Ly?t7MLOL4"><field name="i">IconNames.Surprised</field></block></next></block></statement><value name="IF1"><block type="logic_compare" id="s_KU=X09/tl1:AhB`zo["><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="y0)ZQ7)Pi2Rt^-J8~EAG"><field name="VAR" id="T*9WS`)DHgI[Jk6l^U~q">moisture</field></block></value><value name="B"><shadow type="math_number" id="B*VL5{Kpgj$p^TLP?Vh}"><field name="NUM">909</field></shadow></value></block></value><statement name="DO1"><block type="device_show_leds" id="Huf}nmlTCw.Ea/IprQ+O"><field name="LEDS">`
+        . . . . . 
+        . # # # . 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field><next><block type="basic_show_icon" id="~bv2kSbJs[:!u6PXr.l."><field name="i">IconNames.Happy</field><next><block type="device_show_leds" id="X*~`FgAALr5DXr7mDX-%"><field name="LEDS">`
+        . . . . . 
+        . # # # . 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="m0:Y-s{CDb*P@`9FO-tR"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        # # # # #
+        `</field><next><block type="basic_show_icon" id="2uF%SP%q/7/#0Q!+Rf%L"><field name="i">IconNames.Sad</field><next><block type="playMelody" id="v-r^J}ry1KFBB2}#1fS{"><value name="melody"><shadow type="melody_editor" id="~7e.x},v1B1GkiR)vgU2"><field name="melody">"C5 B A G F E D C "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="{,J){ipF/NDqJbrGqKH:"><mutation min="40" max="500" label="Tempo" precision="0"></mutation><field name="SLIDER">120</field></shadow></value></block></next></block></next></block></statement></block></next></block></statement></block><block type="pxt-on-start" id="!N#Dl}M:.vc4C.P?RIDb" x="0" y="0"></block><block type="device_button_event" id="Oxh.AJoq/iFKqs?/Rhs#" x="-17" y="111"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_number" id="AWNkKx.ny[B02!Bwt%f!"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="l]doSjh0!2yTSU^:jDSG"><field name="name">AnalogPin.P1</field></block></value></block></statement></block></xml>
